@@ -1,0 +1,7 @@
+{
+  "timestamp": "ISO8601带时区；转换瞬时后比较",
+  "sequence": "1起整数；equality delete作用data_sequence<=delete_sequence；position为0起物理行号",
+  "bucket": "int.from_bytes(SHA256(UTF8(value)),big) % buckets；null有独立空分区",
+  "statistics": "上下界不含null，缺失统计表示unknown",
+  "seed": "records.parquet为未注册输入，事件的两个spec供建立不同分区布局；文件身份不可仅取路径末尾"
+}

@@ -1,0 +1,27 @@
+{
+  "dataset": "q008",
+  "files": [
+    {
+      "file": "records.parquet",
+      "table": "records",
+      "sha256": "b7bc82e18d0d6817773a2b7bdacc9b65d5c1eff2945770f18693e96b98b2970e",
+      "bytes": 1531,
+      "rows": 2
+    },
+    {
+      "file": "seed.json",
+      "sha256": "0821b1c2f87fb103f573d97b390860acf6ff32afdb10a0280ebcece6865c5b05",
+      "bytes": 333
+    },
+    {
+      "file": "events.json",
+      "sha256": "766dc67ff511c9863d3a925c3e35e441fbb9577bf30e7a96c5a69b5712a3e3fd",
+      "bytes": 818
+    },
+    {
+      "file": "contracts.json",
+      "sha256": "3f7a4acfcb73417f31e2a6f323334e0b26be0e57e9a949d762254c18b6db7a73",
+      "bytes": 473
+    }
+  ]
+}

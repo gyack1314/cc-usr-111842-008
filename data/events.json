@@ -1,0 +1,50 @@
+[
+  {
+    "kind": "partition_spec",
+    "spec_id": 1,
+    "fields": [
+      {
+        "column": "observed_at",
+        "transform": "day"
+      }
+    ]
+  },
+  {
+    "kind": "partition_spec",
+    "spec_id": 2,
+    "fields": [
+      {
+        "column": "observed_at",
+        "transform": "hour"
+      },
+      {
+        "column": "source",
+        "transform": "identity"
+      }
+    ]
+  },
+  {
+    "kind": "equality_delete",
+    "sequence": 2,
+    "keys": {
+      "sample_id": "S1"
+    }
+  },
+  {
+    "kind": "query",
+    "where": {
+      "or": [
+        {
+          "range": [
+            "observed_at",
+            "2026-04-01T23:00:00Z",
+            "2026-04-02T01:00:00Z"
+          ]
+        },
+        {
+          "is_null": "value"
+        }
+      ]
+    }
+  }
+]

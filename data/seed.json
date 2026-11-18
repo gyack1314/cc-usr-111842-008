@@ -1,0 +1,18 @@
+{
+  "records": [
+    {
+      "row_id": "R1",
+      "source": "A",
+      "observed_at": "2026-04-01T23:30:00Z",
+      "sample_id": "S1",
+      "value": null
+    },
+    {
+      "row_id": "R2",
+      "source": "B",
+      "observed_at": "2026-04-02T00:15:00Z",
+      "sample_id": "S2",
+      "value": "1.0"
+    }
+  ]
+}
